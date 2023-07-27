@@ -1,0 +1,40 @@
+Authentication ka matlab ha ki agar app akk bar page pa login krta ho, fir ya aapsa dubra login nhi pushaga agar aap dubara page open krta ho
+
+1. JSON Web Token (JWT) is a standard used to create access tokens for an applications.
+
+2. It works this way : the server generates a token that certifies the user identify,and sends it to the client.
+
+3.The client will send the token to the server for every subsequent request so the server knows the request comes from a particular identity.
+
+
+Browser                          Server
+ --------post/user/login----------->
+|				   |
+|				   |
+|				   V
+|                       create JWT with secret
+|				   |
+|				   |
+|				   V
+|<----------send JWT to browser----
+|
+|
+|
+|
+|
+|-------send authenticate req----->
+|	with JWT in header	   |
+|				   |
+|				   |
+|				   V
+|                       check JWT signature,
+|			get user info from JWT
+|				   |
+|				   |
+|				   V
+|<_____---send JWT to browser-------
+
+
+
+Step1 install "npm i jsonwebtoken"
+

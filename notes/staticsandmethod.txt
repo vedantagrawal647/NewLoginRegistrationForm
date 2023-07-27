@@ -1,0 +1,8 @@
+Diffference
+
+statics are the method defined in model
+
+methods are definded on the document(instance)
+
+Use.statics For static methods
+Use.methods Forinstance methods

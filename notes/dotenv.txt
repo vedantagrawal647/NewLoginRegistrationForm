@@ -1,0 +1,16 @@
+Dotenv is a zero dependency module tht loads enviroment variables froma .env file into process.env.
+Storing configuration in the enviroment seperate from a code is based on the Twelve Factor App Methodology
+
+Dotenv is used to keep secreate such as password ,secreate key etc
+
+step1 install "npm i dotenv"
+step2 dotenv require at top
+    require("dotenv").config();
+step3 Create .env file in the root directory of your project
+step4 in .env file
+by convention , the variable are written in uppercase letters(e.g. PORT)
+Common examples of configuration data that are stored in enviroment variables include:HTTP 
+database connection
+ location of static file
+ end point of expernal service
+
